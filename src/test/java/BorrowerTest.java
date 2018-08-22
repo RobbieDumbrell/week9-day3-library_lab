@@ -1,3 +1,5 @@
+import models.Book;
+import models.Borrower;
 import org.junit.Before;
 import org.junit.Test;
 
