@@ -1,0 +1,18 @@
+<table>
+
+    <tr>
+        <th>Title</th>
+        <th>Loan Status</th>
+        <th>Borrowed By</th>
+    </tr>
+
+    #foreach($book in $allBooks)
+        <tr>
+            <td>$book.getTitle()</td>
+            <td>$book.prettyLoanStatus()</td>
+            <td>$book.giveBorrowerName()</td>
+        </tr>
+    #end
+
+
+</table>

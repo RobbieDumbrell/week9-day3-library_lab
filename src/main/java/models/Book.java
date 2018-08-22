@@ -59,5 +59,21 @@ public class Book {
         this.currentBorrower = currentBorrower;
     }
 
+    public String prettyLoanStatus(){
+        if(this.getOnLoan() == true){
+            return "Loaned Out";
+        } else {
+            return "Available";
+        }
+    }
+
+    public String giveBorrowerName(){
+        if(this.currentBorrower != null){
+            return this.currentBorrower.getName();
+        } else {
+            return "N/A";
+        }
+    }
+
 
 }
